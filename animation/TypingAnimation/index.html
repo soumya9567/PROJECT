@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Animation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #1e1e1e;
+      color: #fff;
+      font-family: 'Courier New', monospace;
+      margin: 0;
+    }
+
+    .typing-text {
+      font-size: 2rem;
+      border-right: 2px solid #fff;
+      padding-right: 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 4s steps(30) 1s infinite, blinkCaret 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blinkCaret {
+      50% { border-color: transparent; }
+    }
+  </style>
+</head>
+<body>
+  <div class="typing-text">Hello, I'm a typing animation effect!</div>
+</body>
+</html>

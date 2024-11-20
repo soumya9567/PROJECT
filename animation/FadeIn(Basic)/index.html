@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Fade In Animation</title>
+  <style>
+    /* Define the fade-in animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .fade-in {
+      width: 200px;
+      height: 200px;
+      background-color: #3498db;
+      margin: 50px auto;
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+  </style>
+</head>
+<body>
+  <div class="fade-in"></div>
+</body>
+</html>

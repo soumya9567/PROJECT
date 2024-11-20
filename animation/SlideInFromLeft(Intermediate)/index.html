@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide In Animation</title>
+  <style>
+    /* Define the slide-in animation */
+    @keyframes slideInFromLeft {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    .slide-in-left {
+      width: 200px;
+      height: 200px;
+      background-color: #e74c3c;
+      /* position: relative; */
+      animation: slideInFromLeft 1s ease-out forwards;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-in-left"></div>
+</body>
+</html>
